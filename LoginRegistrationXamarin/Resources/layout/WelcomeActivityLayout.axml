@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:text="top|center"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF99FF"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/imageview_profile"
+        android:src="@drawable/user" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:text="Hello, Neeraj welcome to Galaxy"
+        android:id="@+id/textview_greeting"
+        android:layout_below="@+id/imageview_profile" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/popupbuttonmenuimageView"
+        android:src="@drawable/icon" />
+</FrameLayout>

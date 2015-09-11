@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myDrawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/Content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvtext"
+            android:text="Hey slide from left to right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+<!-- The left navigation navigation drawer list-->
+    <ListView
+        android:id="@+id/leftListView"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@drawable/shape_rounded_crimson_rect"
+        android:choiceMode="singleChoice"
+        android:divider="@color/my_Black"
+        android:dividerHeight="2dp" />
+</android.support.v4.widget.DrawerLayout>

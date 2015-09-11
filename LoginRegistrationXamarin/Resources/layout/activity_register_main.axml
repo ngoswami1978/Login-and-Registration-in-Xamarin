@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/imageview_profile"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/user"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                style="@style/myTextViewStyle_Shape_rounded_rect.CRIMSON"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Name"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etname"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:hint="name *"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                android:selectAllOnFocus="true"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLength="50" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Age"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etAge"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="age"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                android:selectAllOnFocus="true"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLength="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Flat No."
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/flatspinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="UserName"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:hint="username *"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                android:selectAllOnFocus="true"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLength="25" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Password"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etpwd"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:hint="password *"
+                android:selectAllOnFocus="true"
+                android:textStyle="italic"
+                android:textSize="12dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLength="25" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Email Id"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etEmail"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email *"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                android:selectAllOnFocus="true"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLength="50" />
+            <Button
+                android:id="@+id/bSignUp"
+                android:text="Sign up"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/selector_color"
+                android:background="@drawable/shape_rounded_crimson_rect" />
+            <TextView
+                android:id="@+id/tvLoginLink"
+                android:text="Already have account? Login here."
+                style="@style/myTextViewStyle_Shape_rounded_rect.WHITE" />
+            <include
+                android:id="@+id/footerView"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                layout="@layout/footer" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

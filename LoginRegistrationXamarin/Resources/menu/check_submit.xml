@@ -1,0 +1,10 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.companyname.myfirstapp.ProfileActivity">
+    <item
+        android:id="@+id/action_submit"
+        android:icon="@drawable/checkicon1"
+        android:title="Submit"
+        android:showAsAction="always"/>
+</menu>

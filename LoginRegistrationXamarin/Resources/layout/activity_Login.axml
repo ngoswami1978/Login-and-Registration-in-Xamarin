@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:hint="Username *"
+        android:selectAllOnFocus="true"
+        android:textStyle="italic"
+        android:maxLength="25"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/etpwd"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:hint="Password *"
+        android:textStyle="italic"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:maxLength="25" />
+    <Button
+        android:id="@+id/bSignIn"
+        android:text="Sign in"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/selector_color"
+        android:background="@drawable/shape_rounded_crimson_rect" />
+    <CheckBox
+        android:id="@+id/checkbox_remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remember me"
+        android:textSize="12dp"
+        android:textColor="@color/my_Indianred"
+        android:checked="true" />
+    <TextView
+        android:id="@+id/tvforget"
+        android:text="Forgot password?"
+        style="@style/myTextViewStyle_Shape_rounded_rect.WHITE" />
+    <TextView
+        android:id="@+id/tvregister"
+        android:text="Register me"
+        style="@style/myTextViewStyle_Shape_rounded_rect.WHITE" />
+    <TextView
+        android:text="Message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shMsg"
+        android:background="@drawable/shape_rounded_white_rect"
+        android:textColor="@drawable/selector_color"
+        android:textStyle="italic"
+        android:textSize="8dp"
+        android:gravity="center" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        style="@style/myTextViewStyle_Shape_rounded_bothside_rect.CRIMSON"
+        android:gravity="center">
+        <TextView
+            android:text="ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/id" />
+        <TextView
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:gravity="left"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:id="@+id/name" />
+        <TextView
+            android:text="Flat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:id="@+id/flat" />
+        <TextView
+            android:text="Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:id="@+id/age" />
+    </LinearLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:id="@+id/listItems" />
+</LinearLayout>

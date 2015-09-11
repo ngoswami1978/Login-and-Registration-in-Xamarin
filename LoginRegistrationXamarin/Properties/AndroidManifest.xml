@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+android:versionCode="1" 
+android:versionName="1.0" 
+package="com.companyname.myfirstapp">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19" />
+	<application 
+		android:theme="@style/MyDefaultwhitesmokeTheme"
+		android:label="Galaxy Apartment" 
+		android:icon="@drawable/icon">
+		<activity 
+			android:name="com.companyname.myfirstapp.LoginScreen"
+			android:theme="@style/MyDefaultwhitesmokeThemewithTitlebar" 
+			android:label="@string/Login_label">
+		</activity>
+		<activity 
+			android:name="com.companyname.myfirstapp.WelcomeActivity"
+			android:theme="@style/MyDefaultwhitesmokeThemewithTitlebar" 
+			android:parentActivityName="com.companyname.myfirstapp"
+			android:label="@string/Welcome_label" >
+    		<meta-data android:name="android.support.UI_OPTIONS" android:value="splitActionBarWhenNarrow" />		
+		</activity>
+		<activity 
+			android:name="com.companyname.myfirstapp.ProfileActivity"
+			android:theme="@style/MyDefaultwhitesmokeThemewithTitlebar" 
+			android:parentActivityName="com.companyname.myfirstapp.WelcomeActivity"
+			android:label="@string/Profile_label" >    		
+		</activity>
+		<activity 
+			android:name="com.companyname.myfirstapp.activity_drawer_welcome"
+			android:theme="@style/MyDefaultwhitesmokeThemewithTitlebar" 
+			android:label="@string/Drawer_label" >    		
+		</activity>
+	</application>
+</manifest>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/pop_List_menu" android:background="@color/my_Crimson">
+    <item android:id="@+id/itemUserList" android:title="UserList" android:icon="@drawable/Icon"/>    
+    <item android:id="@+id/itemMaintainance" android:title="Maintainance" android:icon="@drawable/Icon"/>    
+    <item android:id="@+id/itemDailyExpenses" android:title="DailyExpenses" android:icon="@drawable/Icon"/>    
+    <item android:id="@+id/itemCashflow" android:title="Cashflow" android:icon="@drawable/Icon"/>    
+    <item android:id="@+id/itemEvents" android:title="Events" android:icon="@drawable/Icon"/>    
+    <item android:id="@+id/itemGallary" android:title="Gallary" android:icon="@drawable/Icon"/>    
+    <item android:id="@+id/itemRenters" android:title="Renters" android:icon="@drawable/Icon"/>    
+    <item android:id="@+id/itemRules" android:title="Rules" android:icon="@drawable/Icon"/>    
+    <item android:id="@+id/itemAboutus" android:title="AboutUs" android:icon="@drawable/Icon"/>    
+</menu>
